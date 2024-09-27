@@ -1,3 +1,5 @@
+// Listen for any answer choices being added after runtime
+
 const bodyElement = document.body;
 const config = { childList: true, subtree: true };
 

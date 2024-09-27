@@ -1,3 +1,10 @@
+/**
+ * This script is for sending analytics to my Analytics Dashboard.
+ * All data is anonymous. The only thing I see is how many times things
+ * are striked and unstriked. Don't worry, this is safe data being
+ * transmitted!
+ */
+
 const MEASUREMENT_ID = chrome.runtime.getManifest().env.measurement_id;
 const API_SECRET = chrome.runtime.getManifest().env.api_secret;
 const GA_ENDPOINT = "https://www.google-analytics.com/mp/collect";
