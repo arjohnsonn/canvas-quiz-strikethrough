@@ -1,7 +1,7 @@
-// Listen for any answer choices being added after runtime
 const strikeStyle =
   "background-color: transparent; right: 10px; font-size: 30px; position: absolute; text-decoration: none !important; color: red; border: none; z-index: 2";
 
+// Listen for any answer choices being added after runtime
 const bodyElement = document.body;
 const config = { childList: true, subtree: true };
 
@@ -33,7 +33,7 @@ answerDivs.forEach((element) => {
 
 function initChoice(element) {
   const button = document.createElement("button");
-  button.setAttribute("type", "button"); // Prevents button from submitting since form is an ancestor
+  button.setAttribute("type", "button"); // Prevents button from submitting since <form> is an ancestor
   button.id = "strikethrough";
   button.textContent = "-";
   button.style = strikeStyle;
