@@ -1,4 +1,6 @@
 // Listen for any answer choices being added after runtime
+const strikeStyle =
+  "background-color: transparent; right: 10px; font-size: 30px; position: absolute; text-decoration: none !important; color: red; border: none; z-index: 2";
 
 const bodyElement = document.body;
 const config = { childList: true, subtree: true };
@@ -31,10 +33,10 @@ answerDivs.forEach((element) => {
 
 function initChoice(element) {
   const button = document.createElement("button");
+  button.setAttribute("type", "button"); // Prevents button from submitting since form is an ancestor
   button.id = "strikethrough";
   button.textContent = "-";
-  button.style =
-    "background-color: transparent; right: 10px; font-size: 30px; position: absolute; text-decoration: none !important; color: red; border: none; z-index: 2";
+  button.style = strikeStyle;
 
   element.style.display = "flex";
   element.appendChild(button);
@@ -42,16 +44,15 @@ function initChoice(element) {
   let striked = false;
 
   button.addEventListener("click", (event) => {
-    /* Canvas, for some reason, submits the quiz 
-    when any button is clicked, even injected.*/
-
     event.stopPropagation();
     event.preventDefault();
 
     if (!striked) {
       element.style.textDecoration = "line-through";
+      element.style.color = "gray";
     } else {
       element.style.textDecoration = "initial";
+      element.style.color = "initial";
     }
 
     analyticSend(!striked);

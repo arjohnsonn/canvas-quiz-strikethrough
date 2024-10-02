@@ -6,8 +6,7 @@ Adds a strikethrough option on answers on Canvas quizzes
 
 ## Description
 
-On Canvas quizzes, a strikethrough button will appear on every answer choice. Once pressed, it will strike through the option visually. I know it helps me mentally when I see
-answers marked out.
+On Canvas quizzes, a strikethrough button will appear on every answer choice. Once pressed, it will strike through the option visually. I know it helps me mentally when I see answers marked out.
 
 ## Link to Extension:
 
