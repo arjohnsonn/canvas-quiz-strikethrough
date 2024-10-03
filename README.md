@@ -10,7 +10,7 @@ On Canvas quizzes, a strikethrough button will appear on every answer choice. On
 
 ## Link to Extension:
 
-<b>Chromium Browsers: </b>TBD
+<b>Chromium Browsers: </b> https://chromewebstore.google.com/detail/canvas-quiz-strikethrough/fcjcfgejljnocnojlhemagncjnofdjnj
 <br />
 [You can view all chromium browsers here](<https://en.wikipedia.org/wiki/Chromium_(web_browser)>)
 
